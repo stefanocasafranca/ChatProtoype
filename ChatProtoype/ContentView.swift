@@ -9,11 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing:25) {
+        VStack(spacing:100) {
+            Button("Button1") {
+
+            }
+
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Knock Knock!")
+                .font(.title)
                 .padding() //padding first make the container being able to have bg
                 .background(Color.yellow, in: RoundedRectangle.rect(cornerRadius: 8))
             HStack {
@@ -31,7 +36,7 @@ struct ContentView: View {
                             .background(
                                 RoundedRectangle(cornerRadius: 8)
                                     .fill(Color.yellow)
-                                    .shadow(color: .gray, radius: 5, x: 7, y: 2) // Add shadow
+                                    .shadow(color: .gray, radius: 5, x: 7, y: 10) // Add shadow
                             )
             
     
